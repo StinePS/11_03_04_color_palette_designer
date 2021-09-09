@@ -3,27 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color Exercises</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <title>Color Palette Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <section>
-            <form>
-                <label>Choose a color:</label>
-                <input type="color" value="#84f5cf" id="color" name="color">
-            </form>
-            <div id="show">
-                <div id="show-color"></div>
-                <div id="show-color-values">
-                    <p id="show-hex"></p>
-                    <p id="show-rgb"></p>
-                    <p id="show-hsl"></p>
-            </div>
-            </div>
-        </section>
+    <section>
+      <form>
+        <label>Choose a color:</label>
+        <input type="color" value="#84f5cf" id="color" name="color" />
+      </form>
+      <div id="buttons">
+        <label>Choose harmony:</label>
+        <button data-id="analog" class="selected">Analogous</button>
+        <button data-id="mono">Monochromatic</button>
+        <button data-id="tri">Triad</button>
+        <button data-id="compl">Complementary</button>
+        <button data-id="compo">Compound</button>
+        <button data-id="shady">Shades</button>
+      </div>
+
+      <template>
+        <div>
+          <div class="show-color"></div>
+          <div class="show-color-values">
+            <p class="show-hex"></p>
+            <p class="show-rgb"></p>
+            <p class="show-hsl"></p>
+          </div>
+        </div>
+      </template>
+
+      <div id="show"></div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

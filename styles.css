@@ -1,24 +1,43 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.2rem;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  section {
-    margin: 5rem auto;
-    width: 250px;
-  }
-  
-form {
-    text-align: center;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.1rem;
 }
 
-  #show-color {
-    aspect-ratio: 1/1;
-    margin-top: 1rem;
-    border-radius: 0.75rem;
-  }
+body {
+  margin: 0;
+}
+
+section {
+  margin: 5rem auto;
+  width: 1200px;
+}
+
+form {
+  text-align: center;
+}
+
+#buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.selected {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+#show {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.show-color {
+  aspect-ratio: 1/1;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+}
+
+.show-color-values {
+  margin-left: 0.75rem;
+}
