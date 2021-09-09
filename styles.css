@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  section {
+    margin: 5rem auto;
+    width: 250px;
+  }
+  
+form {
+    text-align: center;
+}
+
+  #show-color {
+    aspect-ratio: 1/1;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+  }
